@@ -4,67 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="50480f76-c4e4-4a14-ace1-2e77b5983e89" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/easyGym.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/controllers/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/controllers/cliente_controller.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/controllers/exercicio_controller.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/controllers/medida_controller.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/controllers/pagamento_controller.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/controllers/treino_controller.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/models/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/models/cliente.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/models/exercicio.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/models/medida.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/models/mensagem.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/models/pagamento.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/models/treino.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/css/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/img/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/js/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/js/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/templates/base.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/templates/clientes/detalhes.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/templates/clientes/editar.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/templates/clientes/lista.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/templates/clientes/lista_inativos.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/templates/clientes/novo.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/templates/dashboard.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/templates/exercicios/detalhes.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/templates/exercicios/editar.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/templates/exercicios/lista.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/templates/exercicios/novo.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/templates/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/templates/pagamentos/lista.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/templates/pagamentos/novo.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/templates/treinos/editar.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/templates/treinos/lista.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/templates/treinos/novo.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/cliente_views.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/exercicio_views.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/pagamento_views.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/treino_views.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extensions.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/migrations/README" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/migrations/alembic.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/migrations/env.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/migrations/script.py.mako" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/migrations/versions/b294f9dc25ef_add_ativo_field_to_cliente.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run.py" afterDir="false" />
-    </list>
+    <list default="true" id="50480f76-c4e4-4a14-ace1-2e77b5983e89" name="Changes" comment="Inicial" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -90,6 +30,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Fernando &lt;engffsantos@gmail.com&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectColorInfo"><![CDATA[{
@@ -116,7 +61,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
+    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.VCS",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -159,8 +104,25 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1736341957860</updated>
-      <workItem from="1736341959209" duration="10147000" />
+      <workItem from="1736341959209" duration="10506000" />
     </task>
+    <task id="LOCAL-00001" summary="Inicial">
+      <option name="closed" value="true" />
+      <created>1736352235711</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1736352235711</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Inicial">
+      <option name="closed" value="true" />
+      <created>1736352245814</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1736352245814</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -179,6 +141,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Inicial" />
+    <option name="LAST_COMMIT_MESSAGE" value="Inicial" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/easyGym$easyGym.coverage" NAME="easyGym Coverage Results" MODIFIED="1736351035694" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />

@@ -1,5 +1,4 @@
 from extensions import db
-
 class Cliente(db.Model):
     __tablename__ = 'clientes'
 
