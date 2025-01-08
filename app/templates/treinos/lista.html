@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block title %}Lista de Treinos - EasyGym{% endblock %}
+
+{% block content %}
+<h2 class="mb-4">Lista de Treinos</h2>
+<a href="/treinos/novo" class="btn btn-primary mb-3">Adicionar Novo Treino</a>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Nome</th>
+            <th>Descrição</th>
+            <th>Ações</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for treino in treinos %}
+        <tr>
+            <td>{{ treino.id }}</td>
+            <td>{{ treino.nome }}</td>
+            <td>{{ treino.descricao }}</td>
+            <td>
+                <a href="#" class="btn btn-info btn-sm">Editar</a>
+                <a href="#" class="btn btn-danger btn-sm">Excluir</a>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}

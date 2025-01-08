@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block title %}Editar Treino - EasyGym{% endblock %}
+
+{% block content %}
+<h2 class="mb-4">Editar Treino</h2>
+
+<form method="POST" action="/treinos/{{ treino.id }}/editar">
+    <div class="mb-3">
+        <label for="nome" class="form-label">Nome do Treino</label>
+        <input type="text" class="form-control" id="nome" name="nome" value="{{ treino.nome }}" required>
+    </div>
+    <div class="mb-3">
+        <label for="descricao" class="form-label">Descrição</label>
+        <textarea class="form-control" id="descricao" name="descricao" rows="3">{{ treino.descricao }}</textarea>
+    </div>
+    <div class="mb-3">
+        <label for="exercicios" class="form-label">Exercícios</label>
+        <textarea class="form-control" id="exercicios" name="exercicios" rows="5">{{ treino.exercicios }}</textarea>
+        <small class="form-text text-muted">Insira os exercícios separados por vírgula.</small>
+    </div>
+    <button type="submit" class="btn btn-primary">Salvar Alterações</button>
+</form>
+{% endblock %}

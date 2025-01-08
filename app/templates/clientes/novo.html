@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+
+{% block title %}Novo Cliente{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h2 class="mt-4">Cadastrar Novo Cliente</h2>
+
+    <!-- Exibe mensagens de erro ou sucesso -->
+    {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+            {% for category, message in messages %}
+                <div class="alert alert-{{ category }} mt-3">
+                    {{ message }}
+                </div>
+            {% endfor %}
+        {% endif %}
+    {% endwith %}
+
+    <form method="POST" action="{{ url_for('cliente_views.novo_cliente') }}">
+        <div class="mb-3">
+            <label for="nome" class="form-label">Nome <span class="text-danger">*</span></label>
+            <input type="text" class="form-control" id="nome" name="nome" placeholder="Digite o nome completo" required>
+        </div>
+
+        <div class="mb-3">
+            <label for="whatsapp" class="form-label">WhatsApp <span class="text-danger">*</span></label>
+            <input type="text" class="form-control" id="whatsapp" name="whatsapp" placeholder="Digite o número do WhatsApp (com DDD)" required>
+        </div>
+
+        <div class="mb-3">
+            <label for="plano" class="form-label">Plano</label>
+            <input type="text" class="form-control" id="plano" name="plano" placeholder="Exemplo: Mensal, Semestral, Anual">
+        </div>
+
+        <div class="mb-3">
+            <label for="dia_vencimento" class="form-label">Dia de Vencimento</label>
+            <input type="number" class="form-control" id="dia_vencimento" name="dia_vencimento" placeholder="Exemplo: 10">
+        </div>
+
+        <div class="mb-3">
+            <label for="ultima_mensalidade" class="form-label">Última Mensalidade</label>
+            <input type="date" class="form-control" id="ultima_mensalidade" name="ultima_mensalidade">
+        </div>
+
+        <div class="mb-3">
+            <label for="observacoes" class="form-label">Observações</label>
+            <textarea class="form-control" id="observacoes" name="observacoes" rows="4" placeholder="Insira informações adicionais sobre o cliente"></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Cadastrar</button>
+        <a href="{{ url_for('cliente_views.listar_clientes') }}" class="btn btn-secondary">Cancelar</a>
+    </form>
+</div>
+{% endblock %}

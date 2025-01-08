@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block title %}Detalhes do Cliente - EasyGym{% endblock %}
+
+{% block content %}
+<h2 class="mb-4">Detalhes do Cliente</h2>
+
+<table class="table table-bordered">
+    <tr>
+        <th>ID</th>
+        <td>{{ cliente.id }}</td>
+    </tr>
+    <tr>
+        <th>Nome</th>
+        <td>{{ cliente.nome }}</td>
+    </tr>
+    <tr>
+        <th>Email</th>
+        <td>{{ cliente.email }}</td>
+    </tr>
+    <tr>
+        <th>Telefone</th>
+        <td>{{ cliente.telefone }}</td>
+    </tr>
+    <tr>
+        <th>Plano</th>
+        <td>{{ cliente.plano }}</td>
+    </tr>
+    <tr>
+        <th>Dia de Vencimento</th>
+        <td>{{ cliente.dia_vencimento }}</td>
+    </tr>
+</table>
+
+<a href="/clientes/{{ cliente.id }}/editar" class="btn btn-info">Editar</a>
+<a href="/clientes" class="btn btn-secondary">Voltar</a>
+{% endblock %}

@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block title %}Detalhes do Exercício - EasyGym{% endblock %}
+
+{% block content %}
+<h2 class="mb-4">Detalhes do Exercício</h2>
+
+<table class="table table-bordered">
+    <tr>
+        <th>ID</th>
+        <td>{{ exercicio.id }}</td>
+    </tr>
+    <tr>
+        <th>Nome</th>
+        <td>{{ exercicio.nome }}</td>
+    </tr>
+    <tr>
+        <th>Grupo Muscular</th>
+        <td>{{ exercicio.grupo_muscular }}</td>
+    </tr>
+    <tr>
+        <th>Descrição</th>
+        <td>{{ exercicio.descricao }}</td>
+    </tr>
+</table>
+
+<a href="/exercicios/{{ exercicio.id }}/editar" class="btn btn-info">Editar</a>
+<a href="/exercicios" class="btn btn-secondary">Voltar</a>
+{% endblock %}

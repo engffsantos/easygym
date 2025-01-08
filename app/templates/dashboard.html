@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+
+{% block title %}Dashboard - EasyGym{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-3">
+        <div class="card text-white bg-primary mb-3">
+            <div class="card-body">
+                <h5 class="card-title">Clientes</h5>
+                <p class="card-text">Gerencie seus clientes cadastrados.</p>
+                <a href="{{ url_for('cliente_views.lista_clientes') }}" class="btn btn-light">Ver Clientes</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card text-white bg-success mb-3">
+            <div class="card-body">
+                <h5 class="card-title">Exercícios</h5>
+                <p class="card-text">Gerencie os exercícios disponíveis.</p>
+                <a href="{{ url_for('exercicio_views.lista_exercicios') }}" class="btn btn-light">Ver Exercícios</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card text-white bg-warning mb-3">
+            <div class="card-body">
+                <h5 class="card-title">Treinos</h5>
+                <p class="card-text">Organize treinos personalizados.</p>
+                <a href="{{ url_for('treino_views.lista_treinos') }}" class="btn btn-light">Ver Treinos</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card text-white bg-danger mb-3">
+            <div class="card-body">
+                <h5 class="card-title">Pagamentos</h5>
+                <p class="card-text">Acompanhe os pagamentos realizados.</p>
+                <a href="{{ url_for('pagamento_views.lista_pagamentos') }}" class="btn btn-light">Ver Pagamentos</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

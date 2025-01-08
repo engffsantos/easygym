@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block title %}Lista de Pagamentos - EasyGym{% endblock %}
+
+{% block content %}
+<h2 class="mb-4">Lista de Pagamentos</h2>
+<a href="/pagamentos/novo" class="btn btn-primary mb-3">Registrar Novo Pagamento</a>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Cliente</th>
+            <th>Valor</th>
+            <th>Status</th>
+            <th>Data de Pagamento</th>
+            <th>Ações</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for pagamento in pagamentos %}
+        <tr>
+            <td>{{ pagamento.id }}</td>
+            <td>{{ pagamento.cliente }}</td>
+            <td>{{ pagamento.valor }}</td>
+            <td>{{ pagamento.status }}</td>
+            <td>{{ pagamento.data_pagamento }}</td>
+            <td>
+                <a href="#" class="btn btn-info btn-sm">Editar</a>
+                <a href="#" class="btn btn-danger btn-sm">Excluir</a>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}

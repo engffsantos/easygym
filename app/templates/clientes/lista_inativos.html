@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block title %}Clientes Inativos{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h2 class="mb-4">Clientes Inativos</h2>
+    <a href="{{ url_for('cliente_views.listar_clientes') }}" class="btn btn-secondary mb-3">Voltar para Lista de Ativos</a>
+
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nome</th>
+                <th>WhatsApp</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for cliente in clientes %}
+            <tr>
+                <td>{{ cliente.id_cliente }}</td>
+                <td>{{ cliente.nome }}</td>
+                <td>{{ cliente.whatsapp }}</td>
+                <td>
+                    <form action="{{ url_for('cliente_views.reativar_cliente', id_cliente=cliente.id_cliente) }}" method="POST" style="display:inline;">
+                        <button type="submit" class="btn btn-success btn-sm">Reativar</button>
+                    </form>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endblock %}

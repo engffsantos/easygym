@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block title %}Novo Treino - EasyGym{% endblock %}
+
+{% block content %}
+<h2 class="mb-4">Criar Novo Treino</h2>
+
+<form method="POST" action="/treinos/novo">
+    <div class="mb-3">
+        <label for="nome" class="form-label">Nome do Treino</label>
+        <input type="text" class="form-control" id="nome" name="nome" required>
+    </div>
+    <div class="mb-3">
+        <label for="descricao" class="form-label">Descrição</label>
+        <textarea class="form-control" id="descricao" name="descricao" rows="3"></textarea>
+    </div>
+    <div class="mb-3">
+        <label for="exercicios" class="form-label">Exercícios</label>
+        <textarea class="form-control" id="exercicios" name="exercicios" rows="5"></textarea>
+        <small class="form-text text-muted">Insira os exercícios separados por vírgula.</small>
+    </div>
+    <button type="submit" class="btn btn-primary">Salvar</button>
+</form>
+{% endblock %}

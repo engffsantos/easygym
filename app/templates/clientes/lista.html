@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+{% block title %}Lista de Clientes - EasyGym{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h2 class="mb-4">Lista de Clientes</h2>
+    <a href="{{ url_for('cliente_views.novo_cliente') }}" class="btn btn-primary mb-3">Adicionar Novo Cliente</a>
+
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nome</th>
+                <th>WhatsApp</th>
+                <th>Plano</th>
+                <th>Status Pagamento</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for cliente in clientes %}
+            <tr>
+                <td>{{ cliente.id_cliente }}</td>
+                <td>{{ cliente.nome }}</td>
+                <td>{{ cliente.whatsapp }}</td>
+                <td>{{ cliente.plano if cliente.plano else 'N/A' }}</td>
+                <td>{{ 'Adimplente' if cliente.status_pagamento else 'Inadimplente' }}</td>
+                <td>
+                    <a href="{{ url_for('cliente_views.editar_cliente', id_cliente=cliente.id_cliente) }}" class="btn btn-info btn-sm">Editar</a>
+                    <form action="{{ url_for('cliente_views.excluir_cliente', id_cliente=cliente.id_cliente) }}" method="POST" style="display:inline;">
+                        <button type="submit" class="btn btn-danger btn-sm">Excluir</button>
+                    </form>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endblock %}
